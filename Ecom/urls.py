@@ -52,6 +52,6 @@ urlpatterns = [
         name="schema-redoc",
     ),
     path('admin/', admin.site.urls),
-    path("api/v1/products", include("catalogio.urls")),
+    path("api/v1/products/", include("catalogio.urls")),
 ]
 

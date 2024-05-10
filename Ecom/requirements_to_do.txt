@@ -1,0 +1,28 @@
+
+'''
+If a seller creates a product, it will get an confirmation email with product name and
+creation date. Seller wont able to create or update a product if it matches with any existing products name.
+Create CRUD APIs based on above conditions.
+
+And also create APIs to calculate tax and shipping cost if customer tries to buy a product.
+
+For more information, seller and customer profile will have their own address. Product has name,
+price, unit, weight, packed height, packed weight, packed length.
+'''
+
+# prcedures:
+
+    - Product model
+        - fields = name, price, unit, weight, packed height, packed weight, packed length.
+
+        Admin:
+            - send mail to user with name and date
+            - existing checking (get_or_create)
+                - if exist return the fetched product.
+            - CRUD
+        Customer:
+            - will have to shown shipping cost and tax
+            - Stripe implemention(third party app)
+
+
+    - Address can be a seperate model or a TextField in User model.
