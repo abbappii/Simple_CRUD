@@ -1,0 +1,10 @@
+
+
+Stripe
+    - need to add stripe public key and secret key
+    - create PaymentIntent with
+        - amount,currency,payment_method_types, etc
+
+    - if we want everything from the backend we can create a button for product and link via webhook to call this order api
+      it will proceed with stripe payment.
+    - or we can implement stripe payment payload pass in the fronted with total amount and others.
