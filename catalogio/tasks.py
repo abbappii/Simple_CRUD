@@ -17,7 +17,7 @@ def send_mail_to_seller(title, email):
     send_to = "bappi142434@gmail.com"
     recipient_list = [email]
     """
-    working well with celery, currently i am not implemented
+    working well with celery, currently i have not implemented
     any mail server thats why i have commented out this line
     of code
     """
